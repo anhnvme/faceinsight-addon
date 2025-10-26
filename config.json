@@ -8,11 +8,9 @@
   "startup": "application",
   "boot": "auto",
   "init": false,
-  "ingress": true,
-  "ingress_port": 0,
   "panel_icon": "mdi:face-recognition",
   "ports": {
-    "6080/tcp": null
+    "6080/tcp": 6080
   },
   "ports_description": {
     "6080/tcp": "Web UI (Configure custom port in options)"
