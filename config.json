@@ -44,7 +44,7 @@
     "models_path": "str?",
     "use_custom_paths": "bool"
   },
-  "image": "ghcr.io/{username}/faceinsight-addon-{arch}",
+  "image": "ghcr.io/anhnvme/faceinsight-{arch}",
   "map": [
     "share:rw"
   ],
