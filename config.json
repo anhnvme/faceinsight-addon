@@ -8,6 +8,9 @@
   "startup": "application",
   "boot": "auto",
   "init": false,
+  "ingress": true,
+  "ingress_port": 0,
+  "panel_icon": "mdi:face-recognition",
   "ports": {
     "6080/tcp": null
   },
