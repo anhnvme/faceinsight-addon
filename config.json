@@ -9,9 +9,7 @@
   "boot": "auto",
   "init": false,
   "panel_icon": "mdi:face-recognition",
-  "ports": {
-    "6080/tcp": 6080
-  },
+  "host_network": true,
   "ports_description": {
     "6080/tcp": "Web UI (Configure custom port in options)"
   },
