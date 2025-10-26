@@ -10,6 +10,7 @@
   "init": false,
   "panel_icon": "mdi:face-recognition",
   "host_network": true,
+  "webui": "http://[HOST]:6080",
   "ports_description": {
     "6080/tcp": "Web UI (Configure custom port in options)"
   },
