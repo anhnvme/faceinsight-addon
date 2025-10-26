@@ -27,7 +27,8 @@
   },
   "image": "ghcr.io/anhnvme/faceinsight-{arch}",
   "map": [
-    "share:rw"
+    "share:rw",
+    "config:rw"
   ],
   "tmpfs": "size=512m",
   "environment": {
