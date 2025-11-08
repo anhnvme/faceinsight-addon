@@ -15,9 +15,9 @@
   },
   "options": {
     "web_port": 6080,
-    "data_path": "/share/faceinsight",
-    "models_path": "",
-    "inbox_path": ""
+    "data_path": "/config/faceinsight",
+    "models_path": "/config/faceinsight/model",
+    "inbox_path": "/config/faceinsight/monitor"
   },
   "schema": {
     "web_port": "port",

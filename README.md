@@ -73,15 +73,7 @@ recognition_threshold: 0.4
 **Use default paths** (recommended for new installations):
 ```yaml
 use_custom_paths: false
-data_path: /share/faceinsight
-```
-
-**Use custom paths** (for migration from docker-compose):
-```yaml
-use_custom_paths: true
-data_path: /home/faceinsight/img
-inbox_path: /home/homeassistant/www/snapshots_2
-models_path: /home/faceinsight/models
+data_path: /config/faceinsight
 ```
 
 This allows you to:
@@ -96,30 +88,6 @@ Port for the web interface. Default: `6080`
 
 Change if you have port conflicts with other addons.
 
-### `mqtt_host` (required)
-MQTT broker hostname. Use `core-mosquitto` for Home Assistant's built-in broker.
-
-### `mqtt_port` (required)
-MQTT broker port. Default: `1883`
-
-### `mqtt_username` (optional)
-MQTT username for authentication.
-
-### `mqtt_password` (optional)
-MQTT password for authentication.
-
-### `mqtt_topic` (required)
-Base topic for MQTT messages. Default: `faceinsight`
-
-### `session_secret` (optional)
-Secret key for Flask sessions. Auto-generated if not provided.
-
-### `max_images_per_person` (required)
-Maximum number of images to store per person. Range: 1-25, Default: 10
-
-### `recognition_threshold` (required)
-Similarity threshold for face recognition. Range: 0.1-0.9, Default: 0.4
-
 ### `data_path` (required)
 Base directory for storing data. Default: `/share/faceinsight`
 
@@ -128,9 +96,6 @@ Custom path for auto-training inbox. Default: `{data_path}/inbox`
 
 ### `models_path` (optional)
 Custom path for InsightFace models. Default: `{data_path}/models`
-
-### `use_custom_paths` (required)
-Enable custom path mapping. Default: `false`
 
 When enabled:
 - Use your specified `data_path`, `inbox_path`, `models_path`
