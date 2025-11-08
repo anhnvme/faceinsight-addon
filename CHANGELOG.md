@@ -27,15 +27,12 @@ All notable changes to this add-on will be documented in this file.
 - Model switching (buffalo_s/buffalo_l/antelopev2)
 - MQTT notifications with person details
 - Docker-based deployment
-- Persistent storage in `/share/faceinsight/`
+- Persistent storage in `/config/faceinsight/`
 - Health check endpoint
 - Responsive web UI
 
 ### Configuration Options
 - MQTT host, port, credentials, topic
-- Session secret for Flask
-- Max images per person (1-25)
-- Recognition threshold (0.1-0.9)
 
 ### Known Limitations
 - First run takes 2-3 minutes to download models
@@ -52,34 +49,3 @@ All notable changes to this add-on will be documented in this file.
 - Paho MQTT
 - Watchdog
 
----
-
-## Future Releases
-
-### [1.1.0] - Planned
-- [ ] Video stream support (RTSP/HTTP)
-- [ ] Real-time camera monitoring
-- [ ] Advanced filtering and search in history
-- [ ] Face grouping and clustering
-- [ ] Export/import person database
-- [ ] Multi-face detection in single image
-- [ ] Face quality scoring
-- [ ] Age and gender detection
-
-### [1.2.0] - Planned
-- [ ] Integration with Home Assistant camera entities
-- [ ] Snapshot automation on recognition
-- [ ] Zone-based recognition (different cameras)
-- [ ] Advanced MQTT topics (per person)
-- [ ] Webhooks support
-- [ ] REST API for external integrations
-- [ ] Mobile app notifications
-
-### [2.0.0] - Planned
-- [ ] GPU acceleration support
-- [ ] Multiple model backends (ONNX, TensorRT)
-- [ ] Face anti-spoofing
-- [ ] Live face recognition dashboard
-- [ ] Advanced analytics and reporting
-- [ ] Multi-user support with permissions
-- [ ] Cloud backup integration
