@@ -1,6 +1,6 @@
 {
   "name": "FaceInsight",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "slug": "faceinsight",
   "description": "Face Recognition System with InsightFace for Home Assistant",
   "url": "https://github.com/anhnvme/faceinsight",
